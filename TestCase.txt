@@ -1,0 +1,90 @@
+
+Feature: Account Holder withdraws cash
+
+   Scenario: Account has sufficient funds
+   Given the account balance is $100
+     And the card is valid
+     And the machine contains enough money  
+    When the Account Holder requests $20
+    Then the ATM should dispense $20
+     And the account balance should be $80
+     And the card should be returned
+
+
+	 Feature :Create Account 
+	 
+	 Scenario: Customer save(customer c)
+	 
+	 Given Pass customer parameter should not null if null
+	 Then the throw nullPointerexception
+         And should pass object instanceOf class
+         When the passing object is not an instance of class
+        Then the throw ClassCastException incompatible type
+        And the pass exception meaningful message
+        And the return to the caller method	 
+	 
+	 
+	
+	 
+	 
+	 Feature : Search Customer By Mobile Number
+	 
+	 Scenario: Customer findByMobile(String Mobile)
+	 
+	 Given Pass Mobile
+	 When Mobile Number is null
+	 Then Mobile Number should not empty 
+	 
+	 Given Pass Mobile
+	 When Mobile Number is less than 10 digits
+	 Then Mobile Number should not be less than 10 digits
+	 
+	 
+	 Feature: Add Customer by name,mobile and amount
+	 
+	 Scenario: addCustomer(String name,String mobile,BigInteger amount)
+	 
+	 Given Pass Name And Mobile And amount
+         When Name is null
+         Then Name Should not be Empty
+	 
+	 Given Pass Name,Mobile number and amount
+         When Mobile Number is null
+         Then Mobile Number should not be empty
+	 
+	 Given Pass Name,Mobile number and amount
+         When Amount is null
+         Then Amount should not be empty
+	 
+	 Given Pass Name,Mobile number and amount
+        When Amount is negative
+       Then Mobile Number should not be negative
+	 
+	 
+	 
+	 
+	 Feature: Show Balance 
+ 
+     Scenario: String showBalance(String mobile)
+	
+	 Given Pass Mobile
+         When Mobile Number is null
+        Then Mobile Number should not empty
+	
+	 Given Pass Mobile
+         When Mobile Number less than 10 digits
+         Then Mobile Number should not less than 10 digits
+ 
+
+	 
+	 
+	Given Pass Name,Mobile number and amount
+        When amount is null
+        Then Name Should not be null
+
+
+	 
+	                                                                                            
+	 
+	 
+	 
